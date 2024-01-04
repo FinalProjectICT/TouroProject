@@ -16,12 +16,12 @@ function PricingCom() {
                 <div class="col-sm-12">
                   <div class="card">
                     <div class="card-header">
-                      <h5>상세 페이지22</h5>
+                      <h5>상세 페이지99</h5>
                     </div>
                     <div class="card-body">
                       <form class="theme-form mega-form">
                         <div class="mb-3">
-                          <label class="form-label-title">제목22</label>
+                          <label class="form-label-title">제목99</label>
                           <input
                             class="form-control"
                             type="text"
