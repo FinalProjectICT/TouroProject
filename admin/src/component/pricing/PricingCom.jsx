@@ -21,7 +21,7 @@ function PricingCom() {
                     <div class="card-body">
                       <form class="theme-form mega-form">
                         <div class="mb-3">
-                          <label class="form-label-title">제목</label>
+                          <label class="form-label-title">제목11</label>
                           <input
                             class="form-control"
                             type="text"
