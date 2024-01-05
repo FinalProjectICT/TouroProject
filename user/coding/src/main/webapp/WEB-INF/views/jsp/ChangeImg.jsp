@@ -54,113 +54,150 @@ pageEncoding="UTF-8"%>
     />
   </head>
 
-  <body>
-    <!-- pre-loader start -->
-    <div class="loader-wrapper img-gif">
-      <img src="../assets/images/loader.gif" alt="" />
+<style>
+    /* 추가된 스타일 */
+    .image-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; /* 중앙 정렬을 위한 추가 */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .button-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .button-section button {
+        margin-top: 10px;
+    }
+
+    .image-container { /* 수정된 부분 */
+        width: 50%;
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+
+<!-- header start -->
+<header class="light_header">
+  <h2>헤더</h2>
+</header>
+<!--  header end -->
+
+<!-- 이미지 선택 폼 및 결과 표시 영역 -->
+<div class="image-section">
+    <div class="image-container">
+        <h2>선택한 이미지</h2>
+        <img src="" alt="Selected Image" id="selected-image">
     </div>
-    <!-- pre-loader end -->
 
-    <!-- header start -->
-    <header class="light_header">
-      <h2>헤더</h2>
-    </header>
-    <!--  header end -->
-
-    <!-- section start -->
-    <section class="p-0 center-slide">
-      <div class="center-slider no-arrow">
-        <div>
-          <div class="image-center">
-            <div class="center-content">
-              <input class="upload-name" value="파일선택" disabled="disabled" />
-              <h3>
-                <label for="input-file" class="upload">업로드</label>
-                <div></div>
-              </h3>
-              <button for="avcde" class="picture-mix">변환</button>
-              <input type="file" id="input-file" class="upload-hidden" />
+    <form action="/upload" method="post" enctype="multipart/form-data" id="upload-form">
+        <div class="image-section">
+            <div class="image-container">
+                <label for="image">이미지 선택:</label>
+                <input type="file" name="image" accept="image/*" id="image" onchange="previewImage()">
             </div>
-          </div>
+
+            <div class="image-container">
+                <label for="style">스타일 선택:</label>
+                <select name="style" id="style">
+                    <option value="Hayao">Hayao</option>
+                    <option value="Hosoda">Hosoda</option>
+                    <option value="Paprika">Paprika</option>
+                    <option value="Shinkai">Shinkai</option>
+                </select>
+            </div>
         </div>
 
-        <div>
-          <div class="image-center">
-            <img
-              src="../assets/images/portfolio/9.jpg"
-              class="img-fluid blur-up lazyload bg-img"
-              alt=""
-            />
-            <div class="center-content"></div>
-          </div>
+        <div class="button-section">
+            <button type="submit">변환</button>
         </div>
-        <div></div>
-        <div>
-          <div class="image-center">
-            <img
-              src="../assets/images/portfolio/10.jpg"
-              class="img-fluid blur-up lazyload bg-img"
-              alt=""
-            />
-            <div class="center-content"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section end -->
+    </form>
 
-    <!-- 푸터 -->
-    <footer>
-      <h2>푸터</h2>
-    </footer>
+    <div class="image-container">
+        <h2>변환된 이미지</h2>
+        <img src="" alt="Cartoonized Image" id="result-image">
 
-    <!-- tap to top -->
-    <div class="tap-top">
-      <div>
-        <i class="fas fa-angle-up"></i>
-      </div>
+        <!-- 이미지 다운로드 버튼-->
+        <a id="download-button" style="display: none; margin-top: 10px;">이미지 다운로드</a>
     </div>
-    <!-- tap to top end -->
+</div>
 
-    <!-- setting start 화면 검정 + 왼쪽 정렬 , 오른쪽 정렬-->
-    <div class="theme-setting">
-      <div class="dark">
-        <input class="tgl tgl-skewed" id="dark" type="checkbox" />
-        <label
-          class="tgl-btn"
-          data-tg-off="Dark"
-          data-tg-on="Light"
-          for="dark"
-        ></label>
-      </div>
-      <div class="rtl">
-        <input class="tgl tgl-skewed" id="rtl" type="checkbox" />
-        <label
-          class="tgl-btn"
-          data-tg-off="RTL"
-          data-tg-on="LTR"
-          for="rtl"
-        ></label>
-      </div>
-    </div>
-    <!-- setting end -->
 
-    <!-- latest jquery-->
-    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <!-- 푸터 -->
+  <footer>
+    <h2>푸터</h2>
+  </footer>
 
-    <!-- slick js-->
-    <script src="../assets/js/slick.js"></script>
+<!-- Axios 스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <!-- Bootstrap js-->
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<!-- 파일 선택 후 미리보기 기능을 위한 스크립트 -->
+<script>
+  function previewImage() {
+      var selectedImage = document.getElementById('selected-image');
+      var imageInput = document.getElementById('image');
 
-    <!-- lazyload js-->
-    <script src="../assets/js/lazysizes.min.js"></script>
+      var file = imageInput.files[0];
+      if (file) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+              selectedImage.src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+      }
+  }
+</script>
 
-    <!-- Theme js-->
-    <script src="../assets/js/script.js"></script>
+<!-- 파일 업로드 및 이미지 표시를 위한 스크립트 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('upload-form').addEventListener('submit', function (e) {
+          e.preventDefault();
 
-    <!-- fileupload js-->
-    <script src="../assets/js/fileupload.js"></script>
-  </body>
+          var imageFile = document.getElementById('image').files[0];
+          var selectedStyle = document.getElementById('style').value;
+
+          var formData = new FormData();
+          formData.append('image', imageFile);
+          formData.append('style', selectedStyle);
+
+          axios.post('http://localhost:5050/upload', formData)
+              .then(function (response) {
+                  var resultImageData = response.data.result_image;
+                  var resultImageElement = document.getElementById('result-image');
+                  resultImageElement.src = 'data:image/jpeg;base64,' + resultImageData;
+                  resultImageElement.style.display = 'block';
+
+                  // 이미지 다운로드 버튼 생성
+                  var downloadButton = document.createElement('a');
+                  downloadButton.href = 'data:image/jpeg;base64,' + resultImageData;
+                  downloadButton.download = 'cartoonized_image.jpg';
+                  downloadButton.textContent = '이미지 다운로드';
+                  downloadButton.style.display = 'block';
+                  downloadButton.style.marginTop = '10px';
+                  downloadButton.addEventListener('click', function() {
+                      document.body.removeChild(downloadButton);
+                  });
+                  document.body.appendChild(downloadButton);
+              })
+              .catch(function (error) {
+                  console.error('Error during image upload:', error);
+              });
+      });
+  });
+</script>
+</body>
 </html>
