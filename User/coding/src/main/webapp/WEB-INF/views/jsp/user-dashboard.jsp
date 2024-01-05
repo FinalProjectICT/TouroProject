@@ -11,7 +11,7 @@ pageEncoding="UTF-8"%>
     <meta name="author" content="rica" />
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" />
     <title>Rica</title>
-
+<!-- 수정 -->
     <!--Google font-->
     <link
       href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
