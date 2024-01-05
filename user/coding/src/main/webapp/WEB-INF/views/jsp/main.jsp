@@ -99,7 +99,7 @@ pageEncoding="UTF-8"%>
                         </div>
                       </li>
                       <li class="nav-submenu">
-                        <a href="/jsp/TourList#" class="nav-link">Tour</a>
+                        <a href="/jsp/TourList" class="nav-link">Tour</a>
                       </li>
                       <li class="nav-submenu">
                         <a href="/jsp/TouroMate_list" class="nav-link"
@@ -632,6 +632,7 @@ pageEncoding="UTF-8"%>
                         alt=""
                       />
                       <h2>여행지 추천</h2>
+                      <div class="decorate">추천명</div>
                     </div>
                     <div
                       class="product-wrapper-grid special-section grid-box ratio3_2"
