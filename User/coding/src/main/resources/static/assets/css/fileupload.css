@@ -1,0 +1,235 @@
+.center-content input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+
+#modi_del_btn{
+  margin-left:914px !important;
+}
+
+.center-content .upload,.upload1,.upload2,.upload3 {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #99b4db;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+}
+
+
+.picture-mix {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #99b4db;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 1.25em;
+  margin-left:-176px;
+  margin-top: 300px;
+  font-size:30px;;
+}
+
+
+
+
+/* named upload */
+.center-content .upload-name {
+  display: inline-block;
+  padding: .5em .75em;  /* label의 패딩값과 일치 */
+  font-size: inherit;
+  font-family: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 화면이 768px 이하일 때 */
+@media (max-width: 768px) {
+  .btn-rounded {
+    margin-left: auto ;  /* 왼쪽 여백을 자동으로 설정하여 가운데 정렬 */
+    margin-right: auto ; /* 오른쪽 여백을 자동으로 설정하여 가운데 정렬 */
+    display: block ;    /* 블록 레벨 요소로 표시하여 한 줄에 하나씩 표시 */
+  } 
+a #modi_del_btn{
+  margin-left: auto ;  /* 왼쪽 여백을 자동으로 설정하여 가운데 정렬 */
+  margin-right: auto ; /* 오른쪽 여백을 자동으로 설정하여 가운데 정렬 */
+}
+}
+
+/* 화면이 769px 이상일 때 */
+@media (min-width: 769px) {
+  .btn-rounded {
+    margin-left: 1250px;  /* 왼쪽 여백을 자동으로 설정하여 현재 위치에서 정렬유지 */
+    margin-right: 0;    /* 오른쪽 여백을 0으로 설정하여 오른쪽으로 이동 */
+    display: block;    /* 블록 레벨 요소로 표시하여 한 줄에 하나씩 표시 */
+    text-align: right; 
+    
+  }
+}
+
+/* 화면이 769px 이상일 때 (게시글 상세 정보 css) */
+@media (min-width: 769px) {
+#exampleFormControlInput111 {
+  height: 400px !important; /* 원하는 높이로 조절하세요 */ 
+  width: 100%  !important; /* 너비를 100%로 설정하여 부모 요소의 크기에 맞춥니다 */
+  padding: 10px !important; /* 내부 여백을 조절하세요 */
+  font-size: 16px; /* 원하는 폰트 크기로 조절하세요 */
+  border: 1px solid #ccc; /* 테두리 스타일 및 색상을 설정하세요 */
+  border-radius: 5px; /* 테두리의 꼭지점을 둥글게 만듭니다 */
+  resize: none !important; /* 사용자가 크기를 조절하지 못하도록 설정합니다 */
+  overflow: auto ; /* 내용이 영역을 벗어날 경우 스크롤바 표시 */
+}
+}
+
+/* 화면이 768px 이하일 때 */
+@media (max-width: 768px) {
+  #exampleFormControlInput111,#exampleFormControlInput1 {
+    height: auto !important; /* 원하는 높이로 조절하세요 */ 
+    width: auto !important; /* 너비를 100%로 설정하여 부모 요소의 크기에 맞춥니다 */
+    padding: auto !important; /* 내부 여백을 조절하세요 */
+    font-size: auto !important; /* 원하는 폰트 크기로 조절하세요 */
+    border: 1px solid #ccc !important ; /* 테두리 스타일 및 색상을 설정하세요 */
+    border-radius: auto !important;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+    resize: none !important; /* 사용자가 크기를 조절하지 못하도록 설정합니다 */
+    overflow: auto !important; /* 내용이 영역을 벗어날 경우 스크롤바 표시 */
+  }
+}
+
+/* 화면이 768px 이하일 때 */
+@media (max-width: 768px) {
+#destinationInput{
+  width: auto  !important;
+  height: auto !important;
+  border-radius: auto !important;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+}
+}
+
+
+/* 화면이 768px 이상 일때 */
+@media (min-width: 768px) {
+  #destinationInput{
+    width: 100%  !important;
+    height: 30px !important;
+    border-radius: auto !important;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+  }
+
+  
+  }
+  
+#info_btn , #modi, #del {
+  display: block;
+  font-style: #ffff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #dbd6d6cc;
+  cursor: pointer;
+  padding: 10px 31px;
+  border-radius: auto;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+}
+
+#info_btn:hover {
+  background-color: #2f4a85;
+}
+
+
+/* 화면이 768px 이하일 때 */
+@media (max-width: 768px) {
+  #info_btn , #modi, #del {
+    width: auto !important ;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: right !important; /* 가운데 정렬을 위해 추가 */
+      border-radius: auto !important;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+  }
+  
+#about,.single-sidebar {
+    width: auto !important ; /* 너비를 원하는 값으로 조절 */
+    /* 다른 스타일 속성들도 필요에 따라 추가 가능 */
+    margin-left: auto !important ;
+    margin-right: auto !important ;
+    text-align: right !important ; /* 가운데 정렬을 위해 추가 */
+    border-radius: auto !important;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+    transform: none !important;
+  }
+  
+  /* #sidesideside {
+    width: auto !important; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: right !important; 
+    border-radius: auto !important;
+    transform: none !important;
+  } */
+
+/* 담당자에게 사과에 말씀을 전합니다*/
+}
+
+/* 화면이 769px 이상일 때 */
+@media (min-width: 769px) {
+  #info_btn, #modi, #del {
+      margin-left: auto;
+      transform: none;
+      text-align: right; 
+      border-radius: auto;/* 테두리의 꼭지점을 둥글게 만듭니다 */
+    }
+
+    
+#about,.single-sidebar {
+      margin-left: 0 ; 
+      transform: none;
+      border-radius: auto ;
+    }
+
+    /* #sidesideside {
+      margin-left: auto !important;
+      transform: none !important;
+      border-radius: auto !important;
+    } */
+/* 담당자에게 사과에 말씀을 전합니다*/
+    
+}
+
+.single-sidebar {
+  width: 1406px; /* 너비를 원하는 값으로 조절 */
+}
+
+#writerNumber{
+  margin-left: 26px;  
+}
+
+#writerinsert{
+  margin-left: 10px;
+}
+
+
+#sidesideside{
+  width: 1050px !important; /* 너비를 원하는 값으로 조절 */
+}
+
+#writerBoard{
+  font-size: 20px !important;
+}
