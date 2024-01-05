@@ -690,9 +690,10 @@ pageEncoding="UTF-8"%>
                 <a href="javascript:void(0)" class="view-map"
                   ><i class="fas fa-search"></i> 검색
                 </a>
+
                 <a
                   href="javascript:void(0)"
-                  class="filter_button filter-bottom-title"
+                  class="filter_button filter-bottom-title view-map"
                 >
                   <img
                     src="../assets/images/icon/adjust.png"
