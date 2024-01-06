@@ -68,7 +68,7 @@ pageEncoding="UTF-8"%>
           <div class="col">
             <div class="menu">
               <div class="brand-logo">
-                <a href="../index.html">
+                <a href="../jsp/main">
                   <img
                     src="../assets/images/icon/footer-logo.png"
                     alt=""
