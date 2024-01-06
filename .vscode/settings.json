@@ -1,3 +1,4 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "i18next.i18nPaths": "c:/Touro/TouroProject/User/coding/src/main/resources/static/assets/js/ckeditor/lang,c:/Touro/TouroProject/User/coding/src/main/resources/static/assets/js/editor/ckeditor/lang,c:/Touro/TouroProject/User/coding/src/main/resources/static/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang,c:/Touro/TouroProject/User/coding/src/main/resources/static/assets/js/ckeditor/plugins/specialchar/dialogs/lang,c:/Touro/TouroProject/User/coding/src/main/resources/static/assets/js/editor/ckeditor/plugins/a11yhelp/dialogs/lang,c:/Touro/TouroProject/User/coding/src/main/resources/static/assets/js/editor/ckeditor/plugins/specialchar/dialogs/lang"
 }
