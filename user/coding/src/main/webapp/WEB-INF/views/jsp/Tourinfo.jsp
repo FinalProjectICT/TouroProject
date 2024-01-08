@@ -463,6 +463,7 @@ pageEncoding="UTF-8"%>
                       />
                     </div>
                   </div>
+                  
                   <div class="row">
                     <div class="about-sec col-lg-7">
                       <h6>소개문</h6>
