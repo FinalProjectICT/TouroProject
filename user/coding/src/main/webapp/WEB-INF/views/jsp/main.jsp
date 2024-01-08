@@ -955,6 +955,10 @@ pageEncoding="UTF-8"%>
       <i class="fas fa-user"></i>
     </div>
 
+    <div>
+    <a href="/jsp/user-dashboard">마이페이지</a>
+    </div>
+
     <!-- 사용자 페이지(Modal) 창 구성 시작 -->
     <div
       class="modal fade edit-profile-modal"
