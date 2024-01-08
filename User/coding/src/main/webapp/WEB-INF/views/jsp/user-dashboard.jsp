@@ -62,6 +62,7 @@ pageEncoding="UTF-8"%>
 
   <body>
     <!-- header start -->
+
     <!--  header end -->
 
     <!-- breadcrumb start -->
@@ -609,7 +610,7 @@ pageEncoding="UTF-8"%>
                         class="dashboard-title col"
                         style="justify-content: right"
                       >
-                        <button>영수증 앱 리뷰</button>
+                      <a href="/jsp/app-review">영수증 앱 리뷰</a> 
                       </div>
                       <div
                         class="dashboard-title col"
@@ -1726,6 +1727,9 @@ pageEncoding="UTF-8"%>
 
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
+
+    <!-- 영수증 앱 리뷰 웹에서 막은 js-->
+    <script src="../assets/js/app_review.js"></script>
 
     <!-- Dropzone | 영수증 리뷰 사진 올리기 --> 
     <script>
