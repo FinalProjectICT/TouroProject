@@ -204,6 +204,7 @@ pageEncoding="UTF-8"%>
       <div class="container">
         <div class="row">
           <div class="col-12">
+            <!-- 수정 친구찾기 쓰기 -->
             <div class="filter-panel right-filter open-cls">
               <div class="left-filter">
                 <div class="respon-filter-btn">
