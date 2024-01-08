@@ -197,6 +197,7 @@ pageEncoding="UTF-8"%>
       <div class="container">
         <div class="row">
           <div class="col-12">
+            <!-- 수정 글쓰기 -->
             <div class="filter-panel">
               <div class="left-filter">
                 <div class="respon-filter-btn">
